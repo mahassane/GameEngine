@@ -210,8 +210,15 @@ namespace our {
             //TODO: (Req 10) Get the camera position
             glm::vec3 camera_position = (camera->getOwner()->getLocalToWorldMatrix()* glm::vec4(0.0f, 0.0f, 0.0f, 1.0f));
 
-			//TODO: (Req 10) Create a model matrix for the sy such that it always follows the camera (sky sphere center = camera position)
+			//TODO: (Req 10) Create a model matrix for the sky such that it always follows the camera (sky sphere center = camera position)
+			 glm::mat4 translationMat = glm::mat4(
+                1.0f, 0.0f, 0.0f, 0.0f,
+                0.0f, 1.0f, 0.0f, 0.0f,
+                0.0f, 0.0f, 1.0f, 0.0f,
+                camera_position.x, camera_position.y, camera_position.z, 1.0f
+            ); 
 
+			glm::mat4 sky_model = camera->getProjectionMatrix(windowSize)*camera->getViewMatrix()*translationMat;
 			//TODO: (Req 10) We want the sky to be drawn behind everything (in NDC space, z=1)
 			// We can acheive the is by multiplying by an extra matrix after the projection but what values should we put in it?
 			glm::mat4 alwaysBehindTransform = glm::mat4(
@@ -221,9 +228,9 @@ namespace our {
 				0.0f, 0.0f, 0.0f, 1.0f
 			);
 			//TODO: (Req 10) set the "transform" uniform
-
+			skyMaterial->shader->set("transform", alwaysBehindTransform * sky_model);
 			//TODO: (Req 10) draw the sky sphere
-
+			skySphere->draw();
 		}
 		//TODO: (Req 9) Draw all the transparent commands
 		// Don't forget to set the "transform" uniform to be equal the model-view-projection matrix for each render command
