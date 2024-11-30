@@ -23,6 +23,11 @@ namespace our {
             // Hints: the sky will be draw after the opaque objects so we would need depth testing but which depth funtion should we pick?
             // We will draw the sphere from the inside, so what options should we pick for the face culling.
             PipelineState skyPipelineState{};
+            skyPipelineState.faceCulling.enabled =  true;  // Enable face culling
+            skyPipelineState.faceCulling.culledFace = GL_FRONT;  // Cull front faces (render the inside of the sphere)
+            skyPipelineState.faceCulling.frontFace = GL_CCW;   // Set counter-clockwise winding as the front face
+            skyPipelineState.depthTesting.enabled = true;  // Enable depth testing
+            skyPipelineState.depthTesting.function = GL_EQUAL; // Depth test passes if the new depth is less than or equal
             
             // Load the sky texture (note that we don't need mipmaps since we want to avoid any unnecessary blurring while rendering the sky)
             std::string skyTextureFile = config.value<std::string>("sky", "");
@@ -165,11 +170,14 @@ namespace our {
         // If there is a sky material, draw the sky
         if(this->skyMaterial){
             //TODO: (Req 10) setup the sky material
-            
+            skyMaterial->setup();
+
             //TODO: (Req 10) Get the camera position
-            
+            glm::vec3 camera_position = (camera->getOwner()->getLocalToWorldMatrix()* glm::vec4(0.0f, 0.0f, 0.0f, 1.0f));
+
             //TODO: (Req 10) Create a model matrix for the sy such that it always follows the camera (sky sphere center = camera position)
-            
+            glm::mat4 model_matrix = glm::translate(glm::mat4(1.0f), camera_position);
+
             //TODO: (Req 10) We want the sky to be drawn behind everything (in NDC space, z=1)
             // We can acheive the is by multiplying by an extra matrix after the projection but what values should we put in it?
             glm::mat4 alwaysBehindTransform = glm::mat4(
