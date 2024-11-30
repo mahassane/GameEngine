@@ -42,7 +42,11 @@ namespace our
         //  - the center position which is the point (0,0,-1) but after being transformed by M
         //  - the up direction which is the vector (0,1,0) but after being transformed by M
         //  then you can use glm::lookAt
-        return glm::mat4(1.0f);
+        glm::vec3 eye = glm::vec3(M * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f));
+        glm::vec3 center = glm::vec3(M * glm::vec4(0.0f, 0.0f, -1.0f, 1.0f));
+        glm::vec3 up = glm::vec3(M * glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
+        return glm::lookAt(eye, center, up);
+        // return glm::mat4(1.0f);
     }
 
     // Creates and returns the camera projection matrix
@@ -55,17 +59,15 @@ namespace our
         //  Left and Right are the same but after being multiplied by the aspect ratio
         //  For the perspective camera, you can use glm::perspective
         //  Retrieve the entity owning this camera component
-        auto owner = getOwner();
+        float aspectRatio = static_cast<float>(viewportSize.x) / static_cast<float>(viewportSize.y);
 
-        // Get the local-to-world transformation matrix
-        auto M = owner->getLocalToWorldMatrix();
-
-        // Extract eye, center, and up vectors in world space
-        glm::vec3 eye = glm::vec3(M * glm::vec4(0, 0, 0, 1));     // Transforms the origin (0, 0, 0) to world space
-        glm::vec3 center = glm::vec3(M * glm::vec4(0, 0, -1, 1)); // Transforms (0, 0, -1) to world space
-        glm::vec3 up = glm::vec3(M * glm::vec4(0, 1, 0, 0));      // Transforms (0, 1, 0) direction to world space
-
-        // Use glm::lookAt to construct the view matrix
-        return glm::lookAt(eye, center, up);
+        if (cameraType == CameraType::ORTHOGRAPHIC)
+        {
+            return glm::ortho((-orthoHeight / 2.0f) * aspectRatio, (orthoHeight / 2.0f) * aspectRatio, -orthoHeight / 2.0f, orthoHeight / 2.0f, near, far);
+        }
+        else
+        {
+            return glm::perspective(fovY, aspectRatio, near, far);
+        }
     }
 }

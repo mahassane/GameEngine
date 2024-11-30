@@ -54,7 +54,7 @@ namespace our
         void deleteMarkedEntities()
         {
             // TODO: (Req 8) Remove and delete all the entities that have been marked for removal
-            for (Entity *entity : markedForRemoval)
+            for (auto entity : markedForRemoval)
             {
                 entities.erase(entity);
                 delete entity;
@@ -66,12 +66,11 @@ namespace our
         void clear()
         {
             // TODO: (Req 8) Delete all the entites and make sure that the containers are empty
-            for (Entity *entity : entities)
+            for (auto entity : entities)
             {
-                delete entity;
+                markForRemoval(entity);
             }
-            entities.clear();
-            markedForRemoval.clear();
+            deleteMarkedEntities();
         }
 
         // Since the world owns all of its entities, they should be deleted alongside it.
