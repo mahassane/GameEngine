@@ -43,9 +43,7 @@
             "samplers":{
                 "default":{},
                 "pixelated":{
-                    "MAG_FILTER": "GL_NEAREST",
-                    "WRAP_S": "GL_REPEAT",
-                    "WRAP_T": "GL_REPEAT"
+                    "MAG_FILTER": "GL_NEAREST"
                 }
             },
             "materials":{
@@ -155,37 +153,37 @@
                     {
                         "type": "Free Camera Controller"
                     }
+                ],
+                "children": [
+                    {
+                        "position": [1, -1, -1],
+                        "rotation": [45, 45, 0],
+                        "scale": [0.1, 0.1, 1.0],
+                        "components": [
+                            {
+                                "type": "Mesh Renderer",
+                                "mesh": "cube",
+                                "material": "metal"
+                            }
+                        ]
+                    }
                 ]
-                // "children": [
-                //     {
-                //         "position": [1, -1, -1],
-                //         "rotation": [45, 45, 0],
-                //         "scale": [0.1, 0.1, 1.0],
-                //         "components": [
-                //             {
-                //                 "type": "Mesh Renderer",
-                //                 "mesh": "cube",
-                //                 "material": "metal"
-                //             }
-                //         ]
-                //     }
-                // ]
             },
-            // {
-            //     "rotation": [-45, 0, 0],
-            //     "components": [
-            //         {
-            //             "type": "Mesh Renderer",
-            //             "mesh": "monkey",
-            //             "material": "monkey"
-            //         },
-            //         {
-            //             "type": "Movement",
-            //             "linearVelocity": [0, 0.1, 0],
-            //             "angularVelocity": [0, 45, 0]
-            //         }
-            //     ]
-            // },
+            {
+                "rotation": [-45, 0, 0],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "monkey",
+                        "material": "monkey"
+                    },
+                    {
+                        "type": "Movement",
+                        "linearVelocity": [0, 0.1, 0],
+                        "angularVelocity": [0, 45, 0]
+                    }
+                ]
+            },
             {
                 "position": [0, -1, 0],
                 "rotation": [-90, 0, 0],
