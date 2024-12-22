@@ -150,7 +150,7 @@ our::WindowConfiguration our::Application::getWindowConfiguration() {
 // This is the main class function that run the whole application (Initialize, Game loop, House cleaning).
 // run_for_frames decides how many frames should be run before the application automatically closes.
 // if run_for_frames == 0, the application runs indefinitely till manually closed.
-int our::Application::run(int run_for_frames) {
+int our::Application::run(int run_for_frames, double max_time_in_seconds) {
 
     // Set the function to call when an error occurs.
     glfwSetErrorCallback(glfw_error_callback);
@@ -239,9 +239,27 @@ int our::Application::run(int run_for_frames) {
     double last_frame_time = glfwGetTime();
     int current_frame = 0;
 
+
+
+    // Timer variables
+    double start_time = glfwGetTime();
+    double elapsed_time = 0.0;
+
+
     //Game loop
     while(!glfwWindowShouldClose(window)){
         if(run_for_frames != 0 && current_frame >= run_for_frames) break;
+
+
+        // Update elapsed time
+        elapsed_time = glfwGetTime() - start_time;
+
+        // Check if timer has expired
+        if (max_time_in_seconds > 0 && elapsed_time >= max_time_in_seconds) {
+            std::cout << "Time's up! Exiting game loop." << std::endl;
+            break;
+        }
+
         glfwPollEvents(); // Read all the user events and call relevant callbacks.
 
         // Start a new ImGui frame
