@@ -7,8 +7,8 @@
 #include <systems/free-camera-controller.hpp>
 #include <systems/movement.hpp>
 #include <asset-loader.hpp>
-#include <systems/collider.hpp>
-#include <systems/player-controller.hpp>
+// #include <systems/collider.hpp>
+// #include <systems/player-controller.hpp>
 
 // This state shows how to use the ECS framework and deserialization.
 class Playstate: public our::State {

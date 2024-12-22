@@ -11,7 +11,6 @@ namespace our {
     public:
 
         glm::vec3 size = { 0, 0, 0 };
-  
 
         // The ID of this component type is "Collider"
         static std::string getID() { return "Collider"; }
