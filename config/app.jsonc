@@ -190,6 +190,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -202,6 +205,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -214,6 +220,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -226,6 +235,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -238,6 +250,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -250,6 +265,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -262,6 +280,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -274,6 +295,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -286,6 +310,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -298,6 +325,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -310,6 +340,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -322,6 +355,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -334,6 +370,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -346,6 +385,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -358,6 +400,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -370,6 +415,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -382,6 +430,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -394,6 +445,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -406,6 +460,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -418,6 +475,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -430,6 +490,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -442,6 +505,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -454,6 +520,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "glass"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -466,6 +535,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -478,6 +550,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -490,6 +565,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -502,6 +580,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -514,6 +595,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -526,6 +610,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -538,6 +625,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -550,6 +640,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -562,6 +655,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -574,6 +670,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -586,6 +685,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -598,6 +700,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -610,6 +715,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -622,6 +730,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -634,6 +745,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -646,6 +760,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -658,6 +775,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -670,6 +790,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -682,6 +805,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -694,6 +820,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -706,6 +835,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -718,6 +850,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -730,6 +865,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -742,6 +880,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -754,6 +895,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -766,6 +910,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -778,6 +925,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -790,6 +940,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -802,6 +955,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -814,6 +970,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -826,6 +985,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -838,6 +1000,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -850,6 +1015,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -862,6 +1030,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -874,6 +1045,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -886,6 +1060,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -898,6 +1075,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -910,6 +1090,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -922,6 +1105,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -934,6 +1120,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -946,6 +1135,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -958,6 +1150,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -970,6 +1165,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -982,6 +1180,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -994,6 +1195,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -1006,6 +1210,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -1018,6 +1225,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -1030,6 +1240,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             },
@@ -1042,6 +1255,9 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "wall"
+                    }, 
+                    {
+                        "type": "Collider"
                     }
                 ]
             }
