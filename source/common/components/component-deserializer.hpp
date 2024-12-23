@@ -6,6 +6,7 @@
 #include "free-camera-controller.hpp"
 #include "movement.hpp"
 #include "collider.hpp"
+#include "key.hpp"
 // #include "player-controller.hpp"
 
 namespace our
@@ -38,6 +39,11 @@ namespace our
         {
             component = entity->addComponent<ColliderComponent>();
         }
+        else if (type == KeyComponent::getID())
+        {
+            component = entity->addComponent<KeyComponent>();
+        }
+        
         // else if (type == PlayerControllerComponent::getID())
         // {
         //     component = entity->addComponent<PlayerControllerComponent>();
