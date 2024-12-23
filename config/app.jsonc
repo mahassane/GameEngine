@@ -546,6 +546,10 @@
             "material": "glass"
           },
           {
+            "type": "Goal",
+            "position": [ -50, 5, -16 ]
+          },
+          {
             "type": "Collider",
             "size": [ 1, 12, 6.5 ]
           }
@@ -1342,11 +1346,11 @@
             "type": "Mesh Renderer",
             "mesh": "sphere",
             "material": "glass"
-          }
-          // {
-          //   "type": "Collider",
-          //   "size": [3, 3, 3]
-          // }
+          },
+          {
+             "type": "Key",
+             "position": [10, 0, 5]
+         }
         ]
       }
     ]

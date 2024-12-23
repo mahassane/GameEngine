@@ -4,12 +4,12 @@
 #include <iostream>
 
 namespace our {
-    // Reads collider center & radius from the given json object
+    // Reads key position from the given json object
     void KeyComponent::deserialize(const nlohmann::json& data)
     {
         if (!data.is_object()) return;
 
-        pos = data.value("pos", pos);
+        position = data.value("position", position);
         
     }
 }

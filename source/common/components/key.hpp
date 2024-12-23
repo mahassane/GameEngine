@@ -10,13 +10,13 @@ namespace our {
     class KeyComponent: public Component {
     public:
 
-        glm::vec3 pos = { 0, 0, 0 };
+        glm::vec3 position = { 0, 0, 0 };
 
-        glm::vec3 getPos() const { return pos; }
+        glm::vec3 getPos() const { return position; }
         // The ID of this component type is "Collider"
         static std::string getID() { return "Key"; }
 
-        // Reads collider center & radius from the given json object
+        // Reads key position from the given json object
         void deserialize(const nlohmann::json& data) override;
     };
 

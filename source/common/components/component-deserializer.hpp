@@ -7,7 +7,7 @@
 #include "movement.hpp"
 #include "collider.hpp"
 #include "key.hpp"
-// #include "player-controller.hpp"
+#include "goal.hpp"
 
 namespace our
 {
@@ -44,10 +44,10 @@ namespace our
             component = entity->addComponent<KeyComponent>();
         }
         
-        // else if (type == PlayerControllerComponent::getID())
-        // {
-        //     component = entity->addComponent<PlayerControllerComponent>();
-        // }
+        else if (type == GoalComponent ::getID())
+        {
+            component = entity->addComponent<GoalComponent>();
+        }
 
         if (component)
             component->deserialize(data);

@@ -82,6 +82,8 @@ set(COMMON_SOURCES
         source/common/components/collider.hpp
         source/common/components/key.cpp
         source/common/components/key.hpp
+        source/common/components/goal.cpp
+        source/common/components/goal.hpp
 
         source/common/systems/forward-renderer.hpp
         source/common/systems/forward-renderer.cpp

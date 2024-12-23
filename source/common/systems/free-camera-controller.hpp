@@ -4,6 +4,8 @@
 #include "../components/camera.hpp"
 #include "../components/free-camera-controller.hpp"
 #include "../components/collider.hpp"
+#include "../components/goal.hpp"
+#include "../components/key.hpp"
 
 #include "../application.hpp"
 
@@ -50,7 +52,55 @@ namespace our
             }
             // If there is no entity with both a CameraComponent and a FreeCameraControllerComponent, we can do nothing so we return
             if (!(camera && controller))
+            {
                 return false;
+            }
+
+            //cout << "Greating Goal" << endl;
+
+            // Locate the goal component
+            GoalComponent *goal = nullptr;
+            for (auto entity : world->getEntities())
+            {
+                goal = entity->getComponent<GoalComponent>();
+                //cout << "Goal Doesnt Exist" << endl;
+                if (goal)
+                {
+                    //cout << "goal exists" << endl;
+                    break;
+                }
+            }
+
+            // If no goal is found, return
+            if (!goal)
+                return false;
+
+            // Access the goal position
+            glm::vec3 goalPosition = goal->position;
+
+            // Debugging: Print the goal position
+            //std::cout << "Goal Position: " << goalPosition.x << ", "  << goalPosition.y << ", " << goalPosition.z << std::endl;
+
+            // Locate the key component
+            KeyComponent *key = nullptr;
+            for (auto entity : world->getEntities())
+            {
+                key = entity->getComponent<KeyComponent>();
+                //cout << "Key Doesnt Exist" << endl;
+                if (key)
+                {
+                    //cout << "Key exists" << endl;
+                    break;
+                }
+            }
+
+            // If no key is found, return
+            if (!key)
+                return false;
+
+            // Access the key position
+            glm::vec3 keyPosition = key->position;
+
             // Get the entity that we found via getOwner of camera (we could use controller->getOwner())
             Entity *entity = camera->getOwner();
 
@@ -194,13 +244,13 @@ namespace our
             }
 
             
-            if (glm::abs(position.x - 10) < 4 && glm::abs(position.z - 5) < 4)
+            if (glm::abs(position.x - glm::abs(keyPosition.x)) < 4 && glm::abs(position.z - glm::abs(keyPosition.z)) < 4)
             {
                 TreasureFound = true;
-                cout << "Treasure: " << TreasureFound << endl;
+                //cout << "Treasure: " << TreasureFound << endl;
             }
 
-            return detect_exit(world, position, TreasureFound);
+            return detect_exit(world, position, TreasureFound, goalPosition);
         }
 
 
@@ -276,22 +326,22 @@ namespace our
             return false;
         }
 
-        bool detect_exit(World* world, glm::vec3 position, bool found)
+        bool detect_exit(World* world, glm::vec3 position, bool found, glm::vec3 goal)
         {
             // std::cout << "Position: " << position.x << " " << position.y << " " << position.z << std::endl;
             
-            cout << "Found: " << found << endl;
-            if (glm::abs(position.x + 50) < 6 && glm::abs(position.z + 16) < 6)
+            //cout << "Found: " << found << endl;
+            if (glm::abs(position.x - goal.x) < 6 && glm::abs(position.z - goal.z) < 6)
             {
-                cout << "Reached Glass" << endl;
-                cout << "Found: " << found << endl;
+                //cout << "Reached Glass" << endl;
+                //cout << "Found: " << found << endl;
                 if(found)
                 {
-                    cout << "Game over: " << found;
+                    //cout << "Game over: " << found;
                     return true;
                 }
             }
-            // cout << "Game not over: " << found;
+            //cout << "Game not over: " << found;
             return false;
         }
     };
