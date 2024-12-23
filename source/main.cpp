@@ -60,5 +60,5 @@ int main(int argc, char** argv) {
 
     // Finally run the application
     // Here, the application loop will run till the terminatio condition is statisfied
-    return app.run(run_for_frames, 100.0); 
+    return app.run(run_for_frames, 1000.0); 
 }

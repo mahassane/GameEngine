@@ -1334,6 +1334,20 @@
             "size": [ 1, 12, 6.5 ]
           }
         ]
+      },
+      {
+        "position": [10, 0, 5],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "sphere",
+            "material": "glass"
+          }
+          // {
+          //   "type": "Collider",
+          //   "size": [3, 3, 3]
+          // }
+        ]
       }
     ]
   }

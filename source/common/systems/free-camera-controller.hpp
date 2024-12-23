@@ -13,10 +13,12 @@
 #include <glm/gtx/fast_trigonometry.hpp>
 #include "../components/collider.hpp"
 #include <iostream>
+using namespace std;
 
 namespace our
 {
     int jump_distance = 0;
+    bool TreasureFound = false;
     // The free camera controller system is responsible for moving every entity which contains a FreeCameraControllerComponent.
     // This system is added as a slightly complex example for how use the ECS framework to implement logic.
     // For more information, see "common/components/free-camera-controller.hpp"
@@ -191,7 +193,14 @@ namespace our
                 position.y -= 1;
             }
 
-            return detect_exit(world, position);
+            
+            if (glm::abs(position.x - 10) < 4 && glm::abs(position.z - 5) < 4)
+            {
+                TreasureFound = true;
+                cout << "Treasure: " << TreasureFound << endl;
+            }
+
+            return detect_exit(world, position, TreasureFound);
         }
 
 
@@ -267,13 +276,22 @@ namespace our
             return false;
         }
 
-        bool detect_exit(World* world, glm::vec3 position)
+        bool detect_exit(World* world, glm::vec3 position, bool found)
         {
             // std::cout << "Position: " << position.x << " " << position.y << " " << position.z << std::endl;
-            if (glm::abs(position.x - 38) < 2 && glm::abs(position.z + 183) < 2)
+            
+            cout << "Found: " << found << endl;
+            if (glm::abs(position.x + 50) < 6 && glm::abs(position.z + 16) < 6)
             {
-                return true;
+                cout << "Reached Glass" << endl;
+                cout << "Found: " << found << endl;
+                if(found)
+                {
+                    cout << "Game over: " << found;
+                    return true;
+                }
             }
+            // cout << "Game not over: " << found;
             return false;
         }
     };
