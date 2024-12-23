@@ -41,7 +41,7 @@ class Playstate: public our::State {
     void onDraw(double deltaTime) override {
         // Here, we just run a bunch of systems to control the world logic
         movementSystem.update(&world, (float)deltaTime);
-        cameraController.update(&world, (float)deltaTime);
+        bool win = cameraController.update(&world, (float)deltaTime);
         // colliderSystem.update(&world, (float)deltaTime);
         // playerControllerSystem.update(&world, (float)deltaTime);
 
@@ -51,7 +51,7 @@ class Playstate: public our::State {
         // Get a reference to the keyboard object
         auto& keyboard = getApp()->getKeyboard();
 
-        if(keyboard.justPressed(GLFW_KEY_ESCAPE)){
+        if(keyboard.justPressed(GLFW_KEY_ESCAPE) || win){
             // If the escape  key is pressed in this frame, go to the play state
             getApp()->changeState("menu");
         }
